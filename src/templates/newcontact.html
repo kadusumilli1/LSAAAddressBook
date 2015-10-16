@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> New Contact </title>
+</head>
+<body>
+<h2>Add New Contact</h2>
+<form action="{{ action }}" method="POST">
+  {% csrf_token %}
+  <ul>
+    {{ form.as_ul }}
+  </ul>
+<input type="submit" value = "save">
+</form>
+</body>
+</html>

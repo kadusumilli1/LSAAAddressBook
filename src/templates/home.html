@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Welcome! </title>
+<script>
+function checkPassword()
+{ 
+var pwd = document.getElementById('password');
+var con_pwd = document.getElementById('password_confirm');
+if (pwd!= con_pwd)
+alert("Passwords do not match!");
+}
+</script>
+</head>
+<body>
+<h2>Sign Up!</h2>
+
+<form action="" onsubmit = "return checkPassword()" >
+Email:
+<input type="text" name="email">
+<br><br>
+Password:
+<input type="password" id="password">
+<br><br>
+Confirm Password:
+<input type="password" id="password_confirm">
+<br><br>
+<input type="submit" value = "submit">
+</form>
+
+</body>
+</html>
